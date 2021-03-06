@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="dragregion"></div>
+
+    <form class="startwindow">
+
+        <div class="startwindow__header">
+            <ul class="startwindow__list">
+                <li><a href="#" class="startwindow__link">Чем заняться?</a></li>
+                <li><a href="#" class="startwindow__link" onclick="RemoteAction('mainsite_button')">Основной сайт</a></li>
+                <li><a href="#" class="startwindow__link">Донат</a></li>
+                <li><a href="#" class="startwindow__link" onclick="RemoteAction('secretpromo_button')">Секретный промо</a></li>
+            </ul>
+
+            <div class="startwindow__header_right">
+                <a href="#" class="startwindow__settings"></a>
+                <div class="startwindow__close" onclick="RemoteAction('appexit')"></div>
+            </div>
+        </div>
+
+        <select name="" id="" class="startwindow__servers_select">
+            <option disabled>Сервер №1</option>
+            <option value="Сервер №1">Сервер №1</option>
+        </select>
+
+        <!-- <div class="startwindow__servers">
+            Сервер №1
+
+            <ul class="startwindow__servers_list">
+                <li>Сервер №1</li>
+                <li>Сервер №2</li>
+                <li>Сервер №3</li>
+                <li>Сервер №4</li>
+            </ul>
+        </div> -->
+
+        <p class="startwindow__logo">GO2<span>RAGE</span></p>
+
+        <div class="startwindow__play" onclick="RemoteAction('startplay')">
+
+            <div class="startwindow__playtext" id="playbutton">Играть</div>
+
+        </div>
+
+        <!--<div class="startwindow__load">
+            <img src="assets/img/icons/download01.svg" alt="" id="percentshower">
+            Скачиваем... <span>54%</span>
+        </div> -->
+
+        <div class="startwindow__load" id="startwindow__load" display="none">
+            
+            Скачиваем... 0%
+        </div>
+
+        <div class="startwindow__slider">
+            <div class="startwindow__block">
+                <img src="assets/img/icons/flag01.svg" alt="" class="flag">
+
+                <p class="ttl">Обновление магазина</p>
+                <p class="txt">Мы обновили магазин одежды и оружия. Стоимость скорректирована.</p>
+            </div>
+            <div class="startwindow__block">
+                <img src="assets/img/icons/flag01.svg" alt="" class="flag">
+
+                <p class="ttl">Новый транспорт</p>
+                <p class="txt">Транспорт уже доставлен в гараж фракций.</p>
+            </div>
+            <div class="startwindow__block">
+                <img src="assets/img/icons/flag01.svg" alt="" class="flag">
+
+                <p class="ttl">Министр Культуры!</p>
+                <p class="txt">Вы хотите делать RP-ивенты? Развлекать граждан? Это место для вас, пишите.</p>
+            </div>
+            <!--<div class="startwindow__block">
+                <img src="assets/img/icons/flag01.svg" alt="" class="flag">
+
+                <p class="ttl">Обновление магазина</p>
+                <p class="txt">Optional description. Hide or delete this layer if it’s not needed.</p>
+            </div>
+            <div class="startwindow__block">
+                <img src="assets/img/icons/flag01.svg" alt="" class="flag">
+
+                <p class="ttl">Обновление магазина</p>
+                <p class="txt">Optional description. Hide or delete this layer if it’s not needed.</p>
+            </div>-->
+
+        </div>
+
+    </form>
+
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
